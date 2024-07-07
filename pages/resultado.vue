@@ -25,7 +25,7 @@ const score = computed(() => {
 
   const totalQuestions = questions.value.length;
   const correctQuestions = questions.value.filter(
-    (question) => question.rating
+    (question: questionsType) => question.rating
   ).length;
 
   const percentage = Math.round(
@@ -82,10 +82,10 @@ const functionNumberQuestion = (number: number) => {
         </FunctionButton>
       </div>
 
-      <img
+      <!-- <img
         class="flex-shrink-0 w-64 h-full lg:block hidden"
         src="/img/resultado.png"
-        alt="Felicidades" />
+        alt="Felicidades" /> -->
     </section>
 
     <div
