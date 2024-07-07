@@ -5,7 +5,7 @@ import { getLocalStorage } from "../components/SubComponents/localStorage";
 const questions = ref<questionsType[]>([]);
 const numberQuestion = ref(0);
 const isOgro = ref(false);
-const img = ref("/img/resultado.png");
+const img = ref("/IMG/resultado.png");
 
 useHead({
   title: "Resultado",

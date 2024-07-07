@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const img = "/img/js.svg";
+const img = ref("/IMG/js.svg");
 </script>
 
 <template>
