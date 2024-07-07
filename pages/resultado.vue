@@ -5,6 +5,7 @@ import { getLocalStorage } from "../components/SubComponents/localStorage";
 const questions = ref<questionsType[]>([]);
 const numberQuestion = ref(0);
 const isOgro = ref(false);
+const img = ref("/img/resultado.png");
 
 useHead({
   title: "Resultado",
@@ -84,7 +85,7 @@ const functionNumberQuestion = (number: number) => {
 
       <img
         class="flex-shrink-0 w-64 h-full lg:block hidden"
-        src="/img/resultado.png"
+        :src="img"
         alt="Felicidades" />
     </section>
 
