@@ -82,10 +82,10 @@ const functionNumberQuestion = (number: number) => {
         </FunctionButton>
       </div>
 
-      <!-- <img
+      <img
         class="flex-shrink-0 w-64 h-full lg:block hidden"
         src="/img/resultado.png"
-        alt="Felicidades" /> -->
+        alt="Felicidades" />
     </section>
 
     <div
