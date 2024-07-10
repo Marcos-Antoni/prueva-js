@@ -1,48 +1,44 @@
-# Nuxt Example
+# Proyecto Test de JS
 
-Deploy your [Nuxt](https://nuxt.com) project to Vercel with zero configuration.
+He creado un prototipo de test para programar en el cual puedes ver tu habilidad en JS con 3 simples ejercicios. Lo he creado porque tenía curiosidad de saber qué tan complicado era integrar un editor de código y determinar si el usuario cumplía con éxito el ejercicio pedido.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
+## Probar el proyecto
 
-_Live Example: https://nuxtjs-template.vercel.app_
+URL del proyecto desplegado en Vercel: [Test de JS](https://prueva-js.vercel.app/)
 
-Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
+Clonar el proyecto:
 
 ```bash
-# yarn
-yarn
-
-# npm
+# 1. Clonar proyecto
+git clone https://github.com/Marcos-Antoni/prueva-js.git
+# 2. Terminal
+cd ./prueva-js
+# 3. Instalar dependencias
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+Ya instaladas las dependencias solo queda crear tu propio .env:
 
 ```bash
-npm run dev
+# En el .env crea la siguiente variable junto con tu clave privada de OpenAi
+OPENAI_KEY="Tu clave privada"
 ```
 
-## Production
+Y solo queda correr el comando npm run dev y tendrás el proyecto funcionando.
 
-Build the application for production:
+## Herramientas utilizadas
 
-```bash
-npm run build
-```
+1. Nuxt.Js
+2. TS
+3. Codemirror
+4. OpenAI
+5. Talently
 
-Locally preview production build:
+## Cómo funciona
 
-```bash
-npm run preview
-```
+Para crearlo, primero hice un boceto básico de cómo quería que funcionara y lo guardé en esta imagen:
+![Estructura del Proyecto](https://prueva-js.vercel.app/IMG/Estructura_del_proyecto.png)
 
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment#presets) for more information.
+Este proyecto usa tanto front-end como back-end, esto es así porque necesitaba usar la API de OpenAI y al mismo tiempo dar un entorno agradable al usuario con un editor de código como Codemirror. Con esto, no solo logré resolver el problema, sino que además me dio la facilidad de integrar un crítico que puede leer su código y ayudar a mejorar tu código si lo haces mal y felicitar al usuario si lo cumple bien.
+
+**Con todo lo que les he contado, les invito a probarlo y comentarme lo que opinan.**
